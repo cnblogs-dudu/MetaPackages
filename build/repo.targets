@@ -69,7 +69,7 @@
 
     <ItemGroup>
       <PackageStoreManifestFiles Include="$(PackageCacheOutputPath)**\artifact.xml">
-        <DestinationFile>manifest.$(RID).xml</DestinationFile>
+        <DestinationFile>aspnetcore.manifest.$(RID).xml</DestinationFile>
       </PackageStoreManifestFiles>
       <_PackageCacheFiles Include="$(PackageCacheOutputPath)**\*" Exclude="$(PackageCacheOutputPath)**\artifact.xml" />
       <PackageCacheFiles Include="@(_PackageCacheFiles)" >
